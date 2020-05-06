@@ -1,0 +1,11 @@
+[Trigger]
+Operation = Install
+Operation = Remove
+Type = Package
+Target = *
+
+[Action]
+Description = Updating Blackmenu...
+When = PostTransaction
+Depends = blackmenu
+Exec = /usr/bin/blackmenu-update
